@@ -1,0 +1,14 @@
+{
+  "name": "ecomo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Thomas Guthruf",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.0.4"
+  }
+}

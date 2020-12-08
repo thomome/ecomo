@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ökomorphologie Stufe F</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dropzone" id="input"></div>
+    <button class="btn" id="analyze">Berechnung starten</button>
+    <div class="console" id="output"></div>
+
+    <script src="./lib/papaparse.min.js"></script>
+    <script src="./lib/FileSaver.min.js"></script>
+    <script src="./lib/jszip.min.js"></script>
+    <script src="./src/CSV.js"></script>
+    <script src="./src/Dropzone.js"></script>
+    <script src="./src/EcomoEvaluator.js"></script>
+    <script src="./src/Logger.js"></script>
+
+    <script src="./src/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    background: #fff;
+    margin: 0;
+    font-family: 'Heebo';
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.console {
+		font-family: 'Source Code Pro';
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: #282c34;
+    color: #abb2bf;
+    padding: 1rem;
+    font-size: 0.75rem;
+		overflow: auto;
+		line-height: 1.4;
+}
+
+.console .error {
+    color: #e06c75;
+}
+
+.btn {
+    background: #61AFEF;
+    border: 0;
+    padding: 1rem 1rem;
+    font-size: 1.125rem;
+    color: #282c33;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s;
+		font-weight: 500;
+		font-family: inherit;
+}
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	background: #282c34;
+}
+
+a {
+	color: #61afef;
+	margin: 0.5rem 0.5rem;
+	font-size: 0.875rem;
+}
+
+.btn:hover {
+		background: #81bef3;
+}
+
+.dropzone {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+    background: #e0eaf3;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.dropzone::after {
+    position: absolute;
+    content: '';
+    left: 5px;
+    top: 5px;
+    right: 5px;
+    bottom: 5px; 
+    border: 2px dashed #00000033;
+    transition: all 0.2s;
+}
+
+.dropzone.is-dragover {
+    background: #ffffff;
+}
+
+.dropzone.is-dragover::after {
+    left: 15px;
+    top: 15px;
+    right: 15px;
+    bottom: 15px; 
+}
+
+.dropzone__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dropzone__file {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-content: center; */
+    /* max-width: 120px; */
+    /* text-align: center; */
+    font-size: 0.875rem;
+    /* margin: 1rem 1rem; */
+}
+
+.dropzone__file img {
+    display: block;
+    margin-right: 0.25rem;
+    /* width: 50px; */
+}

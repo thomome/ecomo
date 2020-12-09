@@ -8,7 +8,8 @@ class Dropzone {
         this.root.appendChild(this.container)
 
         this.input = document.createElement('input')
-        this.input.type = 'file'
+				this.input.type = 'file'
+				this.input.accept='.csv'
         this.input.multiple = true
 
         this.addEvents()
@@ -52,7 +53,7 @@ class Dropzone {
                 this.container.innerHTML += `<div class="dropzone__file"><img src="./data/file.svg">${file.name}</div>`
             }
         } else {
-            this.container.innerHTML = `<span>Wähle deine Dateien aus <br>oder ziehe sie in dieses Feld</span>`
+            this.container.innerHTML = `<span>Wähle deine Dateien <br>oder ziehe sie in dieses Feld</span>`
         }
     }
 

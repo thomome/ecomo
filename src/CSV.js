@@ -1,5 +1,30 @@
 class CSV {
-    constructor() {}
+		constructor() {}
+		
+		async check(file, columns) {
+			return new Promise((resolve, reject) => {
+					Papa.parse(file, {
+							preview: 1,
+							skipEmptyLines: true,
+							complete: (results) => {
+									const header = results.data[0]
+									if (header) {
+										for(let col of columns) {
+											if(!header.includes(col)) {
+												reject(`Error: column "${col}" could not be found`)
+											}
+										}
+										resolve(true)
+									} else {
+										reject('Error: Could not find csv header.')
+									}
+							},
+							error: (error) => {
+									reject(error)
+							}
+					})
+			}) 
+	}
 
     async parse(file) {
         return new Promise((resolve, reject) => {

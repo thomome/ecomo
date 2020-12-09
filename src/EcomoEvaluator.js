@@ -1,5 +1,7 @@
 class EcomoEvaluator {
-    constructor() {}
+		constructor() {}
+
+		static requiredColumns = ['BVar', 'GSBreite', 'SohlVer', 'LBukVer', 'RBukVer']
 
     evaluateRow(row) {
         row = { ...row };

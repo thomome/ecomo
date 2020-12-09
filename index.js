@@ -8,7 +8,7 @@ function createWindow () {
       nodeIntegration: false
     }
   })
-  win.removeMenu()
+  // win.removeMenu()
   win.loadFile('index.html')
 }
 

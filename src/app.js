@@ -18,6 +18,9 @@
 						logger.log(`------------`)
 						logger.log(`Start processing "${file.name}":`)
 						try {
+								logger.log(`→ checking columns...`)
+								const ok = await csv.check(file, EcomoEvaluator.requiredColumns)
+
 								logger.log(`→ parsing...`)
 								const { data: rows, meta } = await csv.parse(file)
 

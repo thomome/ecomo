@@ -4,18 +4,38 @@
     <meta charset="UTF-8">
     <title>Ökomorphologie Stufe F</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-		<div class="nav">
-			<a href="./data/Mustertabelle.csv">Mustertabelle.csv</a>
-		</div>
-    <div class="dropzone" id="input"></div>
-    <button class="btn" id="analyze">Berechnung starten</button>
-    <div class="console" id="output"></div>
+	<main class="container">
+		<header class="header">
+			<h1>Ökomorphologie Stufe F</h1>
+			
+			<nav class="navigation">
+				<a target="_blank" href="https://www.modul-stufen-konzept.ch/fg/module/oekomor_f/flaechendeckend/index">
+					Über die Methode
+				</a>
+
+				<a href="./data/Mustertabelle.csv">
+					<i class="fa fa-file-o"></i> Mustertabelle.csv
+				</a>
+
+				<a target="_blank" href="https://github.com/thomome/ecomo">
+					<i class="fa fa-github fa-lg"></i> GitHub
+				</a>
+			</nav>
+		</header>
+
+		<div class="dropzone" id="input"></div>
+		
+		<button class="btn" id="analyze">Berechnung starten</button>
+		
+		<div class="console" id="output"></div>
+	</main>
 
     <script src="./lib/papaparse.min.js"></script>
     <script src="./lib/FileSaver.min.js"></script>

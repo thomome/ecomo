@@ -50,7 +50,7 @@ class Dropzone {
         this.container.innerHTML = '';
         if(this.files.length > 0) {
             for (const file of this.files) {
-                this.container.innerHTML += `<div class="dropzone__file"><img src="./data/file.svg">${file.name}</div>`
+                this.container.innerHTML += `<div class="dropzone__file"><i class="fa fa-file-o"></i> ${file.name}</div>`
             }
         } else {
             this.container.innerHTML = `<span>Wähle deine Dateien <br>oder ziehe sie in dieses Feld</span>`

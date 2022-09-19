@@ -8,7 +8,7 @@
 		const ecomo = new EcomoEvaluator();
 		const dropzone = new Dropzone(input)
 
-		logger.log(`ecomo v0.1.0`)    
+		logger.log(`ecomo v1.1.0`)    
 		
 		analyze.addEventListener('click', async () => {
 				const files = dropzone.getFiles()
